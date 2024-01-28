@@ -1,0 +1,16 @@
+.register-container {
+  padding-top: 13rem;
+  width: 60%;
+  margin: auto;
+  font-family: 'Helvetica';
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.register-form label {
+  margin-left: 3px;
+}
