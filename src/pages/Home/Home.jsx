@@ -1,11 +1,19 @@
+import { useState } from 'react';
 import Header from "../../components/Header/Header";
+import Timer from "../../components/Timer/Timer";
 import "./Home.css";
 
+
 function Home() {
+  const [showTimer, setShowTimer] = useState(true);
+
   return (
     <>
       <Header />
-      <h1>Olá, seja bem-vindo</h1>
+      {showTimer && <Timer />}
+      <button onClick={(() => setShowTimer(!showTimer))}>
+        Mostrar/Esconder
+      </button>
     </>
   )
 }
