@@ -13,6 +13,7 @@ function Header(props) { // props são um objeto passado como primeiro parâmetr
         </ul>
       )}
       {props.name}
+      {props.children}
     </header>
   );
 }
@@ -20,7 +21,8 @@ function Header(props) { // props são um objeto passado como primeiro parâmetr
 // Semelhante à uma interface, define o tipo de cada propriedade do componente
 Header.propTypes = {
   hideMenu: PropTypes.bool,
-  name: PropTypes.string
+  name: PropTypes.string,
+  children: PropTypes.node
 }
 
 export default Header;

@@ -9,7 +9,10 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header>
+        <div>Olá, eu sou um filho</div>
+        <p>Props</p>
+      </Header>
       {showTimer && <Timer />}
       <button onClick={(() => setShowTimer(!showTimer))}>
         Mostrar/Esconder
